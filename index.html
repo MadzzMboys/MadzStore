@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/><!-- Favicon -->
+<link rel="icon" href="https://img-gamma-two.vercel.app/ms.png" type="image/png" />
+
+<!-- Open Graph meta tag -->
+<meta property="og:title" content="Madz Ex Store - Diamond & Jasa Digital Terpercaya" />
+<meta property="og:description" content="Jual Diamond Mobile Legends, Free Fire, dan jasa pembuatan Discord & Website." />
+<meta property="og:image" content="https://img-gamma-two.vercel.app/ms.png" />
+<meta property="og:url" content="https://madz-store.vercel.app" />
+<meta property="og:type" content="website" />
+  <title>Madz Ex Store</title><!-- Favicon -->
+<meta property="og:title" content="Madz Ex Store - Diamond & Jasa Digital Terpercaya" />
+<meta property="og:description" content="Jual Diamond Mobile Legends, Free Fire, dan jasa pembuatan Discord & Website." />
+ <meta property="og:image" content="https://img-gamma-two.vercel.app/ms.png" />
+ <meta property="og:url" content="https://madz-store.vercel.app" />
+ <meta property="og:type" content="website" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.6;
+      -webkit-tap-highlight-color: transparent;
+    }
+    header {
+      background: #1e293b;
+      padding: 1rem;
+      text-align: center;
+    }
+    header img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      color: #38bdf8;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      background: #1e293b;
+      flex-wrap: wrap;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      background: #38bdf8;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      outline: none;
+    }
+    button:active {
+      transform: scale(0.95);
+    }
+    .material-icons { font-size: 1.2em; }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section {
+      margin-bottom: 2rem;
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    section h2 { margin-bottom: 1rem; color: #facc15; }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0f172a;
+      color: #94a3b8;
+    }
+    select, input {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 8px;
+      border: none;
+      margin-bottom: 1rem;
+    }
+    label { font-weight: bold; }
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .price-box {
+      background: #334155;
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
+    }
+    .price-box:hover { transform: scale(1.05); }
+    .price-box h4 { color: #facc15; margin-bottom: 0.5rem; }
+    .price-box p { font-size: 1rem; color: #38bdf8; }
+    .tab-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .tab-buttons button {
+      background: #334155;
+      color: #facc15;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .tab-buttons button.active {
+      background: #38bdf8;
+      color: white;
+    }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    
+    .trs {
+      color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://img-gamma-two.vercel.app/mes.png" alt="Foto Profil Madz Ex Store" />
+    <h1>Madz Ex Store</h1>
+    <p>Jasa Pembuatan Discord, Website, dan Penjualan Diamond</p>
+  </header>
+
+  <nav>
+    <button onclick="dc()"><span class="material-icons">shopping_cart</span> Order Discord</button>
+    <button onclick="wb()"><span class="material-icons">shopping_cart</span> Order Website</button>
+    <button onclick="scrollToSection('diamond')"><span class="material-icons">shopping_cart</span> Order Diamond</button>
+  </nav>
+
+  <main>
+    <section id="discord">
+      <h2>Jasa Pembuatan Discord</h2>
+      <p>Kami menyediakan layanan pembuatan server Discord profesional, lengkap dengan bot dan sistem keamanan modern.<h1 class="trs">.</h1></p>
+    </section>
+
+    <section id="website">
+      <h2>Jasa Pembuatan Website</h2>
+      <p>Buat website impianmu bersama kami! Desain modern, responsif, dan sesuai kebutuhan.<h1 class="trs">.</h1></p>
+    </section>
+
+    <section id="diamond">
+      <h2>Diamond Store</h2>
+      <p>Kami menyediakan diamond Mobile Legends dan Free Fire dengan harga Terjangkau<h1 class="trs">.</h1></p>
+
+      <button onclick="toggleHarga()">
+        <span class="material-icons">price_check</span> Lihat Daftar Harga
+      </button>
+
+      <div id="daftarHarga" style="display:none;">
+        <div class="tab-buttons">
+          <button onclick="showTab('ml')" class="active" id="tab-ml">Mobile Legends</button>
+          <button onclick="showTab('ff')" id="tab-ff">Free Fire</button>
+        </div>
+
+        <div class="tab-content active" id="ml">
+          <div class="price-grid">
+            <div class="price-box"><h4>3 Diamonds</h4><p>Rp 1.500</p></div>
+            <div class="price-box"><h4>12 Diamonds</h4><p>Rp 5.500</p></div>
+            <div class="price-box"><h4>28 Diamonds</h4><p>Rp 12.000</p></div>
+            <div class="price-box"><h4>59 Diamonds</h4><p>Rp 22.500</p></div>
+            <div class="price-box"><h4>85 Diamonds</h4><p>Rp 32.500</p></div>
+            <div class="price-box"><h4>170 Diamonds</h4><p>Rp 65.000</p></div>
+            <div class="price-box"><h4>296 Diamonds</h4><p>Rp 115.000</p></div>
+            <div class="price-box"><h4>370 Diamonds</h4><p>Rp 135.000</p></div>
+            <div class="price-box"><h4>408 Diamonds</h4><p>Rp 145.000</p></div>
+            <div class="price-box"><h4>568 Diamonds</h4><p>Rp 200.000</p></div>
+            <div class="price-box"><h4>875 Diamonds</h4><p>Rp 310.000</p></div>
+            <div class="price-box"><h4>1000 Diamonds</h4><p>Rp 340.000</p></div>
+            <div class="price-box"><h4>2010 Diamonds</h4><p>Rp 700.000</p></div>
+            <div class="price-box"><h4>4032 Diamonds</h4><p>Rp 1.400.000</p></div>
+          </div>
+        </div>
+
+        <div class="tab-content" id="ff">
+          <div class="price-grid">
+            <div class="price-box"><h4>5 Diamonds</h4><p>Rp 1.000</p></div>
+            <div class="price-box"><h4>12 Diamonds</h4><p>Rp 2.000</p></div>
+            <div class="price-box"><h4>50 Diamonds</h4><p>Rp 8.000</p></div>
+            <div class="price-box"><h4>70 Diamonds</h4><p>Rp 10.000</p></div>
+            <div class="price-box"><h4>140 Diamonds</h4><p>Rp 20.000</p></div>
+            <div class="price-box"><h4>355 Diamonds</h4><p>Rp 45.000</p></div>
+            <div class="price-box"><h4>720 Diamonds</h4><p>Rp 90.000</p></div>
+            <div class="price-box"><h4>1000 Diamonds</h4><p>Rp 120.000</p></div>
+            <div class="price-box"><h4>1450 Diamonds</h4><p>Rp 180.000</p></div>
+            <div class="price-box"><h4>2180 Diamonds</h4><p>Rp 250.000</p></div>
+            <div class="price-box"><h4>3640 Diamonds</h4><p>Rp 400.000</p></div>
+            <div class="price-box"><h4>7290 Diamonds</h4><p>Rp 750.000</p></div>
+          </div>
+        </div>
+      </div>
+
+      <button onclick="toggleFormulir()" style="margin-top: 1rem;">
+        <span class="material-icons">description</span> Tampilkan Formulir Pemesanan
+      </button>
+
+      <div id="formulirDiamond" style="display:none; margin-top:2rem;">
+        <h3>Formulir Pemesanan Diamond</h3>
+        <label for="game">Pilih Game:</label>
+        <select id="game" onchange="updateDiamondOptions()" required>
+          <option value="Mobile Legends">Mobile Legends</option>
+          <option value="Free Fire">Free Fire</option>
+        </select>
+
+        <label for="userid">ID / Server ID:</label>
+        <input type="text" id="userid" placeholder="Contoh: 12345678 (1234)" required />
+
+        <label for="jumlah">Pilih Jumlah Diamond:</label>
+        <select id="jumlah" required></select>
+
+        <button onclick="kirimWhatsApp()">
+          <span class="material-icons">send</span> Order Sekarang
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Madz Ex Store. All rights reserved.
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function dc() {
+      window.open('https://wa.me/6283890256854?text=Madz Saya Ingin Order Server Discord');
+    }
+
+    function wb() {
+      window.open('https://wa.me/6283890256854?text=Madz Saya Ingin Order Website');
+    }
+
+    function toggleHarga() {
+      const harga = document.getElementById('daftarHarga');
+      harga.style.display = harga.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function toggleFormulir() {
+      const form = document.getElementById('formulirDiamond');
+      form.style.display = form.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function updateDiamondOptions() {
+      const game = document.getElementById('game').value;
+      const jumlahSelect = document.getElementById('jumlah');
+      jumlahSelect.innerHTML = '';
+
+      let options = [];
+
+      if (game === 'Mobile Legends') {
+        options = [
+          '3 Diamonds', '12 Diamonds', '28 Diamonds', '59 Diamonds', '85 Diamonds',
+          '170 Diamonds', '296 Diamonds', '370 Diamonds', '408 Diamonds', '568 Diamonds',
+          '875 Diamonds', '1000 Diamonds', '2010 Diamonds', '4032 Diamonds'
+        ];
+      } else if (game === 'Free Fire') {
+        options = [
+          '5 Diamonds', '12 Diamonds', '50 Diamonds', '70 Diamonds', '140 Diamonds',
+          '355 Diamonds', '720 Diamonds', '1000 Diamonds', '1450 Diamonds',
+          '2180 Diamonds', '3640 Diamonds', '7290 Diamonds'
+        ];
+      }
+
+      options.forEach(value => {
+        const opt = document.createElement('option');
+        opt.value = value;
+        opt.textContent = value;
+        jumlahSelect.appendChild(opt);
+      });
+    }
+
+    function kirimWhatsApp() {
+      const game = document.getElementById('game').value;
+      const userId = document.getElementById('userid').value;
+      const jumlah = document.getElementById('jumlah').value;
+
+      if (!userId || !jumlah) {
+        alert("Harap isi semua data sebelum mengirim.");
+        return;
+      }
+
+      const pesan = `Halo Madz Excode,%0ASaya ingin memesan Diamond:%0A%0AGame: ${game}%0AID/Username: ${userId}%0AJumlah: ${jumlah}`;
+      const url = `https://wa.me/6283890256854?text=${pesan}`;
+      window.open(url, '_blank');
+    }
+
+    function showTab(id) {
+      document.querySelectorAll('.tab-content').forEach(div => div.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+
+      document.querySelectorAll('.tab-buttons button').forEach(btn => btn.classList.remove('active'));
+      document.getElementById('tab-' + id).classList.add('active');
+    }
+
+    window.onload = updateDiamondOptions;
+  </script>
+</body>
+</html>
